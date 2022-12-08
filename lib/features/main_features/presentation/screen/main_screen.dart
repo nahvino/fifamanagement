@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fifamanagement/config/strings.dart';
 import 'package:fifamanagement/core/shared/drawer_widget.dart';
+import 'package:fifamanagement/features/news_features/presentation/widget/news_widget.dart';
 import 'package:fifamanagement/generated/assets.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           actions: [
             Padding(
-              padding:  const EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.only(left: 15),
               child: Image.asset(
                 Assets.logo,
                 color: Colors.white,
@@ -52,6 +53,7 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
+          const NewsWidget()
         ],
       ),
     );
